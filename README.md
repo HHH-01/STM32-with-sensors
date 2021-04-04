@@ -34,4 +34,4 @@ Task:
 
 ![Circuit Set up](https://github.com/HHH-01/STM32/blob/f028fc426ff353cd08ee4fa8f19110355a3476b8/Images/Circuit.jpg)
 
-![Debugging Window](https://github.com/HHH-01/STM32/blob/f028fc426ff353cd08ee4fa8f19110355a3476b8/Images/Circuit.jpg)
+![Debugging Window](https://github.com/HHH-01/STM32/blob/63101e5e8e58ca9a7d79cf8a742d6c34a3291a6b/Images/DebuggingWindow.PNG)
