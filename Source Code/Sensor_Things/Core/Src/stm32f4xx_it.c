@@ -211,6 +211,11 @@ void EXTI9_5_IRQHandler(void)
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, 1);	
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, 1);
+			
+			if (PIR_interrupt_count>10000)	//Reset the Interrupt Count when it reaches 10,000 to prevent an overflow
+			{
+				PIR_interrupt_count = 0;
+			}
 			}
 			else
 			{

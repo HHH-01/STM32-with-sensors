@@ -32,7 +32,7 @@ Version: 001
 			DB6	PD4
 			DB7	PD3
 3. Set up PIR at PB8 as an Interrrupt. When detecting motion, turn all 3 LEDs on
-		*PIR: PC8 | Use as GPIO_Input (not Interrupt)
+		*PIR: PC8 | Use as GPIO_Input (not Interrupt)>Set it in Repeattable Trigger to prevent a defaut reset
 		*3x on-board LED: PB0, PB7, PB14
 		
 		Component:
@@ -82,6 +82,7 @@ TIM_HandleTypeDef htim2;
 int PIR_interrupt_count;		//Count how many time the interrupt/motion detected for fun. 
 uint32_t ADC_value;
 double temperature_value;
+int PIR_value;	
 //int PIR_interrupt;
 /* USER CODE END PV */
 
@@ -159,7 +160,7 @@ int main(void)
 		LCD_write_word("T:", 2);
 		LCD_write_decimal(temperature_value,4);
 		LCD_write_word(" C", 2);
-		
+		PIR_value = (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8));
 		//Reset all LED if there's no data
 		if ((HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8)==0))
 		{
