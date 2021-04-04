@@ -1,9 +1,13 @@
 # STM32
- STM32 with Temp, LCD, PIR Sensor
-Developer: Harry Hoa Huynh
+#STM32 with Temp, LCD, PIR Sensor
+#Developer: Harry Hoa Huynh
+
 Email: harry.hoa.huynh.01@gmail.com
+
 Date: 4/4/2021
+
 Version: 001
+
 Task:
 1. Read the temperature via debugging window
 		*Temp sensor: PA3
