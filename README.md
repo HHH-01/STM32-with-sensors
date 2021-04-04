@@ -16,14 +16,14 @@ Task:
 * DB6	PD4
 * DB7	PD3
 3. Set up PIR at PB8 as an Interrrupt. When detecting motion, turn all 3 LEDs on
-* PIR: PC8 | Use as GPIO_Input (not Interrupt)
+* PIR: PC8 | Use as an Interruput with Repeattable Trigger Enable by HW
 * 3x on-board LED: PB0, PB7, PB14
 		
 ## Component
 1. STM Nucleo STM32F429ZI
 2. Temperature MCP9700A
 3. LCD HC16102
-4. PIR: 31227SC 
+4. PIR: 31227SC (Enable Repeattable Trigger to prevent a defaut reset by HW)
 
 ## Focus on
 1. EXTI9_5_IRQHandler in stm32f4xx_it.c for PIR Interrupt
