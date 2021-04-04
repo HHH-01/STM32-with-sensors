@@ -26,3 +26,6 @@ Task:
 4. PIR: 31227SC 
 
 ## Picture for reference: 
+![STM32CubeMX](https://github.com/HHH-01/STM32/blob/f028fc426ff353cd08ee4fa8f19110355a3476b8/Images/STM32CubeMx.PNG)
+
+![Circuit Set up](https://github.com/HHH-01/STM32/blob/f028fc426ff353cd08ee4fa8f19110355a3476b8/Images/Circuit.jpg)
