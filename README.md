@@ -16,8 +16,8 @@ Task:
 * DB6	PD4
 * DB7	PD3
 3. Set up PIR at PB8 as an Interrrupt. When detecting motion, turn all 3 LEDs on
-*PIR: PC8 | Use as GPIO_Input (not Interrupt)
-*3x on-board LED: PB0, PB7, PB14
+* PIR: PC8 | Use as GPIO_Input (not Interrupt)
+* 3x on-board LED: PB0, PB7, PB14
 		
 ## Component:
 1. STM Nucleo STM32F429ZI
